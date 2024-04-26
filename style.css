@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(62, 97%, 52%);
+    color: hsl(238, 94%, 49%); /* Text color */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: hwb(319 8% 9%);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: hsl(234, 90%, 49%); /* Background color */
+    color: hsl(63, 97%, 49%);
+    text-align: center;
+    font-size: 28px;
+    animation: slideIn 0.5s ease-in-out;
+}
+.result h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.social-media-icons {
+    margin-top: 20px;
+}
+.social-media-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1); /* To make the logos white */
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
